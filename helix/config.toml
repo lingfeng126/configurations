@@ -1,0 +1,5 @@
+theme = "everforest_dark_soft"
+
+[editor.lsp]
+display-inlay-hints = true
+

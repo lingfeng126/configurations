@@ -1,5 +1,9 @@
 theme = "everforest_dark_soft"
 
+[editor]
+soft-wrap.enable = true
+
+
 [editor.lsp]
 display-inlay-hints = true
 

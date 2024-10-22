@@ -1,0 +1,13 @@
+#!/bin/bash
+
+if ! ruff check --config ruff.toml backend 
+then
+    echo "linter check failed"
+    exit 1
+fi
+
+if ! python -m pytest tests/
+then
+    echo "unittest failed"
+    exit 1
+fi

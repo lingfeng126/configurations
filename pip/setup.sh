@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/bash
 # Replace pip config in Linux environment
 
 # Set path for the pip config file

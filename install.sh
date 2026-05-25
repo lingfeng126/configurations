@@ -175,8 +175,8 @@ install_configs() {
 
             "claude")
                 echo -e "${BLUE}📦 Claude Configurations${NC}"
-                echo -e "${YELLOW}⚠️  Claude configurations found in $SCRIPT_DIR/claude/${NC}"
-                echo -e "${YELLOW}Please manually copy these files as needed for your Claude setup.${NC}"
+                copy_with_confirmation "$SCRIPT_DIR/claude/CLAUDE.md" "$HOME/.claude/CLAUDE.md" "Claude global instructions (CLAUDE.md)"
+                copy_dir_with_confirmation "$SCRIPT_DIR/claude/commands" "$HOME/.claude/commands" "Claude commands"
                 ;;
         esac
     done
